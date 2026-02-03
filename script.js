@@ -80,6 +80,11 @@ cardForm.addEventListener("submit", function (e) {
   }else {
       cardMessage.textContent = cardText.value;
   }
+
+  card.classList.remove("show");
+  setTimeout(()=> {
+    card.classList.add("show");
+  }, 100);
 });
 
 reset.addEventListener("click",function(){
