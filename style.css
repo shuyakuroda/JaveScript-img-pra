@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* .icons {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: skyblue;
+  border-radius: 50%;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+} */
+
+/* .icons.active {
+  border: 3px solid #333;
+  border-radius: 10px;
+} */
+
+/* #selectedIcon {
+  background-color: chartreuse;
+  border-radius: 50%;
+  width: 120px;
+  margin-top: 20px;
+} */
+
+h1 {
+  text-align: center;
+}
+
+/* .img-field {
+  text-align: center;
+} */
+
+/* .item {
+  cursor: pointer;
+}
+ */
+
+/* .btn.active {
+  color: red;
+} */
+
+/* .item.active {
+  color: red;
+}
+ */
+
+.box.active {
+  background: skyblue;
+}
+
+.icn {
+  cursor: pointer;
+  margin: 5px;
+  transition: .2s;
+}
+
+.icn:hover {
+  transform: scale(1.1);
+}
+
+.icn.active {
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+#card {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4f7cff;
+  color: white;
+  cursor: pointer;
+}
+
+#reset {
+  background: #aaa;
+  margin-left: 10px;
+}
+
+body {
+  background: #4f7cff;
+}
+
+.app {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+}
+
