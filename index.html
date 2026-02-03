@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>color-practice</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      text-align: center;
+      padding-top: 40px;
+      font-family: sans-serif;
+    }
+
+    #card {
+      width: 250px;
+      height: 150px;
+      margin: 20px auto;
+      border-radius: 15px;
+      background: skyblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>カードを作ってみよう</h1>
+  <div class="app">
+    <form action="" id="cardForm">
+
+      <h2>①カードの色を選ぼう</h2>
+      <input type="color" id="colorPicker">
+      <br><br>
+
+      <h2>②アイコンを選ぼう</h2>
+      <div>
+        <img src="./images/face-grin-hearts-solid-full.svg" alt="" width="60px" height="60px" class="icn">
+        <img src="./images/face-grin-solid-full.svg" alt="" width="60px" height="60px" class="icn">
+        <img src="./images/face-grin-stars-solid-full.svg" alt="" width="60px" height="60px" class="icn">
+        <img src="./images/face-grin-wink-solid-full.svg" alt="" width="60px" height="60px" class="icn">
+      </div>
+
+      <h2>③カードの文字を入れよう</h2>
+      <input type="text" id="cardText">
+      <br><br>
+
+      <button type="submit" id="btn">決定</button>
+
+      <button type="button" id="reset">リセット</button>
+    </form>
+
+    <div id="card">
+      <span id="cardMessage">My Card</span>
+      <img id="cardIcon" alt="" width="60px">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
