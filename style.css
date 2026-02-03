@@ -25,7 +25,27 @@
   margin-top: 20px;
 } */
 
+body {
+  text-align: center;
+  padding-top: 40px;
+  font-family: sans-serif;
+  background: #f5f7fa;
+}
+
 h1 {
+  color: #333;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 32px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  border-bottom: 3px solid #333;
+  padding-top: 8px;
+}
+
+.title {
   text-align: center;
 }
 
@@ -79,13 +99,13 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
 #reset {
   background: #aaa;
   margin-left: 10px;
-}
-
-body {
-  background: #4f7cff;
 }
 
 .app {
@@ -97,3 +117,11 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
 }
 
+/* #cardForm {
+  background: white;
+  width: 32px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+} */
