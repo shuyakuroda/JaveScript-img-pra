@@ -57,6 +57,7 @@ const cardIcon = document.getElementById("cardIcon");
 const cardText = document.getElementById("cardText");
 const cardMessage = document.getElementById("cardMessage");
 const reset = document.getElementById("reset");
+const count = document.getElementById("count");
 
 let selectedIcn = "";
 
@@ -75,23 +76,33 @@ cardForm.addEventListener("submit", function (e) {
     cardIcon.src = selectedIcn;
   }
 
-  if(cardText.value === "") {
+  if (cardText.value.trim() === "") {
     alert("文字を入力してください")
-  }else {
-      cardMessage.textContent = cardText.value;
+  } else {
+    cardMessage.textContent = cardText.value;
   }
 
   card.classList.remove("show");
-  setTimeout(()=> {
+  setTimeout(() => {
     card.classList.add("show");
   }, 100);
 });
 
-reset.addEventListener("click",function(){
+reset.addEventListener("click", function () {
   card.style.background = "";
   cardIcon.src = "";
   cardMessage.textContent = "My Card";
   cardText.value = "";
   selectedIcn = "";
   icns.forEach(i => i.classList.remove("active"));
+});
+
+cardText.addEventListener("input", function () {
+
+  if (cardText.value.length > 30) {
+    cardText.value = cardText.value.slice(0, 30);
+  }
+
+  count.textContent = `${cardText.value.length} / 30`;
+
 });
